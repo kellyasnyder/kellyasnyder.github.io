@@ -1,1 +1,38 @@
-html syntax
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>고용의 길</title>
+        <link rel="shortcut icon" href="images/icon.png" />
+        <link rel="stylesheet" type= "text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="container">
+            <nav class="headerlinks">
+                <a href="index.html">01. Index</a> 
+                <a href="biography.html">02. Biography</a> 
+                <a href="resume.html">03. Resume</a> 
+                <a href="github.html">04. Github</a> 
+                <a href="gallery.html">05. Gallery</a> 
+                <a href="contact.html">06. Contact</a>
+            </nav>
+            <img src="images/icon.png" class="icon" alt="Icon">
+        </header>
+<div class="contact-text">
+    <h1>Contact Us</h1>
+    <form name= "contact" action="#" method="get" class="contact">
+  <input type="text" id="firstName" name="firstName" placeholder="First Name (Required)" required>
+  <input type="text" id="lastName" name="lastName" placeholder="Last Name (Required)" required>
+  <input type="email" id="email" name="email" placeholder="Email Address (Required)" required>
+  <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+    <br>
+        <br>
+  <textarea name="comments" placeholder="Questions, comments, concerns, etc... (Required)"></textarea>
+  <input class="submit" type="submit" name="Submit" value="submit" onClick="submitForm(event)">
+  </form>
+</div>
+</body>
+</html>
