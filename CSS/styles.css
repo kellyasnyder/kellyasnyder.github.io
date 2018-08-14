@@ -1,0 +1,359 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css?family=Karla");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/*basics*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "karla", monospace, Arial, Helvetica, sans-serif;
+  color: #000;
+  margin: auto;
+  background-color: #fafafa;
+  font-size: 0.7rem;
+  line-height: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*header*/
+.headerlinks {
+  font-family: "Inconsolata";
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.7em;
+  margin: 52px auto 0px -250px;
+  left: 50%;
+  position: absolute;
+  text-align: right;
+  width: 250px;
+}
+
+.headerlinks a {
+  padding: 4px;
+}
+
+.headerlinks a, a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c0b7af;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon {
+  width: 70px;
+  left: 50%;
+  margin-left: 50px;
+  position: relative;
+  margin-top: 35px;
+  border-radius: 150px;
+}
+
+header {
+  position: sticky;
+  width: 100%;
+  height: 150px;
+  background: #FFFFFF;
+  transition: all 0.4s ease;
+  top: 0;
+  margin: auto;
+}
+
+.headerimg {
+  margin: 25px auto;
+  width: 100%;
+}
+
+/* PAGE HEADER */
+.headerlinks {
+  font-family: "Inconsolata";
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.7em;
+  margin: 52px auto 0px -250px;
+  left: 50%;
+  position: absolute;
+  text-align: right;
+  width: 250px;
+}
+
+.headerlinks a {
+  padding: 4px;
+}
+
+.headerlinks a, a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c0b7af;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon {
+  width: 70px;
+  left: 50%;
+  margin-left: 50px;
+  position: relative;
+  margin-top: 35px;
+  border-radius: 150px;
+}
+
+header {
+  position: sticky;
+  width: 100%;
+  height: 150px;
+  background: #FFFFFF;
+  transition: all 0.4s ease;
+  top: 0;
+  margin: auto;
+}
+
+.headerimg {
+  margin: 25px auto;
+  width: 100%;
+}
+
+/* INDEX PAGE */
+.main {
+  margin: auto;
+  width: 55%;
+  line-height: 2em;
+  padding-bottom: 100px;
+}
+
+/* RESUME PAGE */
+h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.resume {
+  padding: 20px;
+}
+
+.resume-h1 {
+  font-size: 3em;
+  letter-spacing: 3px;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+.resume-info {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* CONTACT PAGE */
+.contact-text {
+  width: 50%;
+  margin: auto;
+  max-width: 1150px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 15px 10px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: karla, sans-serif;
+}
+
+input[type=submit] {
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: karla, sans-serif;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  margin: 15px 0 15px;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+  resize: none;
+  font-family: karla, sans-serif;
+}
+
+label {
+  padding: 10px;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-bottom: 100px;
+}
+.gallery .gallery__column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.gallery .gallery__column .gallery__img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.gallery .gallery__column .gallery__caption {
+  padding-left: 0.8rem;
+}
+
+.github {
+  width: 100%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+/* PAGE FOOTER */
+footer {
+  left: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+footer p {
+  text-transform: uppercase;
+  font-family: karla, sans-serif;
+  text-align: justify;
+  font-size: 0.5em;
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.center {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.social-media {
+  padding-left: 10px;
+  padding-right: 10px;
+  align-content: center;
+}
+
+.social-media:hover {
+  opacity: 0.5;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+hr {
+  width: 70%;
+  opacity: 0.2;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 600px) {
+  .icon {
+    display: none;
+  }
+
+  .headerlinks {
+    margin: 50px;
+    left: 0;
+  }
+
+  .main, .contact-text, footer p {
+    width: 80%;
+  }
+
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* UNIVERSAL STYLES */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "karla", monospace, Arial, Helvetica, sans-serif;
+  color: #000;
+  margin: auto;
+  background-color: #fafafa;
+  font-size: 0.7rem;
+  line-height: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=styles.css.map */

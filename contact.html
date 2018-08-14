@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>고용의 길</title>
         <link rel="shortcut icon" href="images/icon.png" />
         <link rel="stylesheet" type= "text/css" href="styles.css">
@@ -21,17 +22,103 @@
             </nav>
             <img src="images/icon.png" class="icon" alt="Icon">
         </header>
-<div class="contact-text">
-    <h1>Contact Us</h1>
-    <form name= "contact" action="#" method="get" class="contact">
-    <input type="text" id="firstName" name="firstName" placeholder="First Name (Required)" required>
-    <input type="text" id="lastName" name="lastName" placeholder="Last Name (Required)" required>
-    <input type="email" id="email" name="email" placeholder="Email Address (Required)" required>
-    <input type="text" id="workplace" name="workplace" placeholder="Place of Work (required)" required>
-    <br>
-  <textarea name="comments" placeholder="Questions, comments, concerns, etc..."></textarea>
-  <input class="submit" type="submit" name="Submit" value="submit" onClick="submitForm(event)">
-  </form>
-</div>
-</body>
+
+    <div class="contact-text">
+    <h1>Contact</h1>
+        <form name= "contact" action="#" method="get" class="contact" onsubmit="return formValidation()">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name (Required)">
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name (Required)">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email Address (Required)">
+            
+            <label for="workplace">Place of Work:</label>
+            <input type="text" id="workplace" name="workplace" placeholder="Place of Work (Required)">
+            
+            <label for="comments">Comments:</label>
+            <textarea name="comments" id="comments" placeholder="Questions, comments, concerns, etc..."></textarea>
+            <input class="submit" type="submit" name="Submit" value="submit" onClick="submitForm(event)">
+        </form>
+    </div>
+
+    <script>
+        function formValidation() {
+            var firstName = document.forms["contact"]["firstName"];              
+            var lastName = document.forms["contact"]["lastName"];   
+            var email = document.forms["contact"]["email"]; 
+            var workplace =  document.forms["contact"]["workplace"]; 
+            var comments = document.forms["contact"]["comments"]; 
+        
+            if (firstName.value == "")                                 
+            {
+                window.alert("Please enter your first name.");
+                firstName.focus();
+                return false;
+            }
+        
+            if (lastName.value == "")                              
+            {
+                window.alert("Please enter your last name.");
+                lastName.focus();
+                return false;
+            }
+            
+            if (email.value == "")                                  
+            {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+        
+            if (email.value.indexOf("@", 0) < 0)                
+            {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+        
+            if (email.value.indexOf(".", 0) < 0)                
+            {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+        
+            if (workplace.value == "")                          
+            {
+                window.alert("Please enter workplace.");
+                workplace.focus();
+                return false;
+            }
+        
+            if (comments.selectedIndex < 1)                 
+            {
+                alert("Please enter your comments.");
+                comments.focus();
+                return false;
+            }
+        
+            return true;
+        }
+    </script>
+
+    <footer>
+        <p>
+            <b>&copy; Kelly Snyder 2018. All Rights Reserved.</b> This site is for educational purposes only. 
+            Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is made for "fair use" 
+            for purposes such as criticism, comment, news reporting, teaching, scholarship, education and research. 
+            Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, 
+            educational or personal use tips the balance in favor of fair use.
+        </p>
+        <hr>
+        <p class="center">
+            <a href="https://www.facebook.com/kellyysnyder" target="_blank">Facebook</a> &mdash;
+            <a href="https://www.instagram.com/d.kfma/" target="_blank">Instagram</a> &mdash;
+            <a href="https://www.linkedin.com/in/kelsny/" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+    </body>
 </html>

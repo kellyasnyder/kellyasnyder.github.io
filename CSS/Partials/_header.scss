@@ -1,0 +1,54 @@
+.headerlinks {
+    font-family: 'Inconsolata';
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.7em;
+    margin: 52px auto 0px -250px;
+    left: 50%;
+    position: absolute;
+    text-align: right;
+    width: 250px;
+}
+
+.headerlinks a {
+    padding: 4px;
+}
+
+.headerlinks a, a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #c0b7af;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.icon {
+    width: 70px;
+    left: 50%;
+    margin-left: 50px;
+    position: relative;
+    margin-top: 35px;
+    border-radius: 150px;
+}
+
+header {
+    position: sticky;
+    width: 100%;
+    height: 150px;
+    background: #FFFFFF;
+    transition: all 0.4s ease;
+    top: 0;
+    margin: auto;
+}
+
+.headerimg {
+    margin: 25px auto;
+    width: 100%;
+}

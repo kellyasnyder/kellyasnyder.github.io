@@ -1,0 +1,43 @@
+footer {
+	left: 0;
+	bottom: 0;
+	background-color: #ffffff;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+footer p {
+	text-transform: uppercase;
+	font-family: karla, sans-serif;
+	text-align: justify;
+	font-size: 0.5em;
+	width: 50%;
+	margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.center {
+	text-align: center;
+	padding-top: 15px;
+}
+
+.social-media {
+	padding-left: 10px;
+	padding-right: 10px;
+	align-content: center;
+}
+
+.social-media:hover {
+    opacity: 0.5;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+hr {
+    width: 70%;
+    opacity: 0.2;
+}
